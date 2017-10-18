@@ -13,9 +13,10 @@ var api = require('../');
 program.command('bundle')
   .description('Bundles a multi-file Swagger spec')
   .option('-o, --outfile <filename>', 'The output file')
+  .option('-b, --basedir <relpath>', 'Base project directory')
   .option('-y, --yaml', 'Output YAML(Default is JSON)')
   .action(function(options) {
-    var swagger = api.bundle();
+    var swagger = api.bundle(options);
     var str = api.stringify(swagger, options);
 
     if (options.outfile) {
