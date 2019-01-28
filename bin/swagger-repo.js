@@ -113,7 +113,7 @@ program
       if (err) {
         console.log(chalk.red('Deploy failed: ') + err);
       }
-      console.log(chalk.green('🎉  Deployed uccessfully!'));
+      console.log(chalk.green('🎉  Deployed successfully!'));
       if (options.preview && process.env.TRAVIS_BRANCH) {
         await notifyBranchPreviewFromTravis(process.env.TRAVIS_BRANCH, process.env.TRAVIS_COMMIT);
         console.log('Set Preview status on GitHub');
