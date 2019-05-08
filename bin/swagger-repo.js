@@ -43,7 +43,7 @@ program
   .description('Builds the static assets and puts it ')
   .option('-b, --basedir <relpath>', 'The output file')
   .option('-o, --outdir <dirname>', 'The output directory, web_deploy by default')
-  .option('-s, --skipCodeSamples <skipCodeSamples>', 'Don\'t include the code samples')
+  .option('-s, --skipCodeSamples', 'Don\'t include the code samples')
   .action(function(options) {
     const config = api.readConfig();
 
