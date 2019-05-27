@@ -21,7 +21,7 @@ function writeAndLog(filename, contents) {
 
 program
   .command('bundle')
-  .description('Bundles a multi-file OpenAPI spec')
+  .description('Bundles a multi-file OpenAPI definition')
   .option('-b, --basedir <relpath>', 'The output file')
   .option('-o, --outfile <filename>', 'The output file')
   .option('-y, --yaml', 'Output YAML(Default is JSON)')
@@ -123,7 +123,7 @@ program
 
 program
   .command('sync-with-spec')
-  .description('Sync single-file OpenAPI spec with bundle')
+  .description('Sync single-file OpenAPI definition with bundle')
   .option('-b, --basedir <relpath>', 'The output file')
   .arguments('<spec>')
   .action(function(spec, options) {
@@ -148,7 +148,7 @@ program
   .description('Serves a OpenAPI and some tools via the built-in HTTP server')
   .option('-p, --port <port>', 'The server port number')
   .option('-b, --basedir <relpath>', 'The output file')
-  .option('--validate', 'Validate spec on each change')
+  .option('--validate', 'Validate definition on each change')
   .action(function(options) {
     const config = api.readConfig();
 

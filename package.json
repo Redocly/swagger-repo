@@ -1,7 +1,7 @@
 {
   "name": "swagger-repo",
   "version": "2.0.0-rc.11",
-  "description": "CLI tool to help you manage your OpenAPI(fka Swagger) repo.",
+  "description": "CLI tool to help you manage your OpenAPI (fka Swagger) repo.",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
@@ -11,6 +11,7 @@
     "API",
     "REST",
     "Restful",
+    "OAS3",
     "OpenAPI",
     "OpenAPI Specification",
     "Swagger"
