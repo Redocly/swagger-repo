@@ -111,6 +111,7 @@ program
     ghpages.publish('web_deploy', publishOpts, async function(err) {
       if (err) {
         console.log(chalk.red('Deploy failed: ') + err);
+        process.exit(1);
       }
       console.log(chalk.green('🎉  Deployed successfully!'));
       if (options.preview && process.env.TRAVIS_BRANCH) {
