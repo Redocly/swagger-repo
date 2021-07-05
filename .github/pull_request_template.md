@@ -9,7 +9,7 @@
 ## Check yourself
 
 - [ ] Code is linted
-- [ ] Tested on lab
+- [ ] Tested
 - [ ] All new/updated code is covered with tests
 
 ## Security
